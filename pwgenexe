@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require File.expand_path(File.dirname(__FILE__) + '/pwgen')
+size = ARGV[0].to_i
+puts Pwgen.new(size).to_a.join(' ')
